@@ -1,0 +1,16 @@
+.hero {
+    background-image: url(../../dist/images/aranhaverso3.png);
+    background-size: cover;
+    
+    &__title {
+        height: 80vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+
+        &__img {
+            width: 50%;
+            
+    }
+}
+}

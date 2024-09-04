@@ -1,0 +1,16 @@
+.sobre{
+    padding: 2px 36px;
+    
+    &__imagem{
+        border-radius: 4px;
+        max-width: 100vh;
+    }
+}
+
+.cropped {
+    width: 500px; /* width of container */
+    height: 300px; /* height of container */
+    object-fit: cover;
+    object-position:45%; /* try 20% 10% */ 
+    border: 0.5px solid black;
+}

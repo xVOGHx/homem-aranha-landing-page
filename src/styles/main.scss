@@ -1,5 +1,37 @@
-$bgColor: rgb(185, 47, 47);
+@use 'hero';
+@use 'header';
+@use 'cores';
+@use 'sobre';
 
-body {
-    background-color: $bgColor;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    background-color: cores.$corPreta;
+}
+
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 14px;
+    color: cores.$corPreta;
+    background-color: cores.$corVermelha;
+
+    &:hover {
+        background-color: lighten(cores.$corVermelha, $amount: 3%);
+    }
+}
+
