@@ -2,15 +2,23 @@
     background-image: url(../../dist/images/aranhaverso3.png);
     background-size: cover;
     
+    @media (max-width:768px){
+        background-position-x: center;
+    }
+
     &__title {
         height: 80vh;
         display: flex;
         justify-content: center; 
         align-items: center;
 
+
         &__img {
             width: 50%;
-            
+
+            @media (max-width:768px){
+                width: 90%;
+            }
     }
 }
 }

@@ -17,6 +17,11 @@
         height: 700px;
         padding: 40px;
 
+        @media (max-width: 768px){
+            max-width:320px;
+            padding: 0 40px 0;
+        }
+
         &__logo{
             max-width: 200px;
         }
@@ -34,12 +39,18 @@
             background-color: cores.$hbo;
             border: 2px solid cores.$corEscura;
             transition: transform .3s ease;
+            
+            @media (max-width: 768px){
+                height: 50px;
+                padding-bottom: 50px;
+            }
 
             &:hover {
                 cursor: pointer;
                 transform: scale(1.08);
                 background-color: lighten(cores.$hbo, $amount: 3%);
             }
+
         }
     }
 }
