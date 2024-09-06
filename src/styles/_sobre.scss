@@ -1,16 +1,37 @@
-.sobre{
-    padding: 2px 36px;
-    
-    &__imagem{
-        border-radius: 4px;
-        max-width: 100vh;
-    }
-}
+@use 'cores';
 
 .cropped {
-    width: 500px; /* width of container */
-    height: 300px; /* height of container */
+    width: 500px;
+    height: 300px;
     object-fit: cover;
-    object-position:45%; /* try 20% 10% */ 
-    border: 0.5px solid black;
+    object-position:45%;
+}
+
+.sobre{
+    margin: 40px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__imagem{
+        margin: 20px 0 20px 20px;
+        border-radius: 4px;
+        border: 0.5px solid black;
+        width: 90%;
+    }
+
+    &__textos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        &__titulo{
+            white-space: nowrap;
+        }
+
+        &__texto{
+                top: 10px;
+        }
+    }
+
 }

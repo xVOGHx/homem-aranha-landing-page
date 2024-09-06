@@ -2,7 +2,8 @@
 @use 'header';
 @use 'cores';
 @use 'sobre';
-
+@use 'trailer';
+@use 'assistir';
 
 * {
     margin: 0;
@@ -11,7 +12,7 @@
 }
 
 body{
-    background-color: cores.$corPreta;
+    background-color: cores.$corEscura;
 }
 
 
@@ -35,3 +36,67 @@ body{
     }
 }
 
+@mixin text($fontsize: 16px) {
+    font-size: $fontsize;
+    line-height: $fontsize + 10;
+    color: cores.$corTextoPrincipal;
+}
+
+@mixin title($fontsize: 40px) {
+    @include text($fontsize);
+    color: cores.$corTextoSecundario;
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width: 768px){
+        @include text(15px);
+    }
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px){
+        @include text(14px);
+    }
+}
+
+.text--small {
+    @include text(12px);
+
+    @media (max-width: 768px){
+        @include text(11px);
+    }
+}
+
+.title--big{
+    @include title(44px);
+
+    @media (max-width: 768px){
+        @include title(26px);
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 768px){
+        @include title(24px);
+    }
+}
+
+.title--small {
+    @include title(28px);
+
+    @media (max-width: 768px){
+        @include title(22px);
+    }
+}
+
+.link-text {
+    @include text(18px);
+    color: cores.$corTextoSecundario;
+    text-decoration: underline;
+}

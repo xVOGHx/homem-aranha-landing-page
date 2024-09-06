@@ -1,0 +1,45 @@
+@use 'cores';
+
+.assistir{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    
+    &__max{
+        border-radius: 5px;
+        border: 2px solid cores.$hbo;
+        background: cores.$gradienteHbo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 460px;
+        height: 700px;
+        padding: 40px;
+
+        &__logo{
+            max-width: 200px;
+        }
+
+        &__titulo{
+            padding-bottom: 40px;
+        }
+
+        &__texto{
+            padding-bottom: 40px;
+        }
+
+        &__link{
+            padding: 20px;
+            background-color: cores.$hbo;
+            border: 2px solid cores.$corEscura;
+            transition: transform .3s ease;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.08);
+                background-color: lighten(cores.$hbo, $amount: 3%);
+            }
+        }
+    }
+}

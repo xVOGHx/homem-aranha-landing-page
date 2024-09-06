@@ -1,0 +1,12 @@
+.trailer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+    padding-bottom: 40px;
+
+    &__video{
+        width: 1120px;
+        height: 630px;
+    }
+}

@@ -10,29 +10,49 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <img class="header__img" src="./dist/images/aranhaa.png" alt="aranha pixada">
+            <a href="#inicio">
+                <abbr title="voltar ao inicio">
+                    <img class="header__img" src="./dist/images/aranhaa.png" alt="aranha pixada">
+                </abbr>
+            </a>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a class="button" href="#">Sobre o filme</a>
+                    <a class="button" href="#sobre">Sobre o filme</a>
                 </li>
                 <li class="header__links__item">
-                    <a class="button" href="#">Onde assistir</a>
+                    <a class="button" href="#assistir">Onde assistir</a>
                 </li>
             </ul>
         </div>
     </header>
-    <section class="hero">
+    <section id="inicio" class="hero">
         <div class="hero__title">
             <img class="hero__title__img" src="./src/imgs/logo.png" alt="aranhaverso">
         </div>
     </section>
-    <section class="sobre">
+    <section id="sobre" class="sobre">
         <div class="sobre__imagens">
             <img class="sobre__imagem cropped" src="./dist/images/aranhaverso2.png" alt="varios homens aranhas">
         </div>
-        <div class="sobre__texto">
-            <h2>Sobre o filme</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis architecto excepturi, accusantium sint exercitationem amet beatae perferendis saepe dignissimos libero et laudantium</p>
+        <div class="sobre__textos">
+            <h2 class="sobre__textos__titulo title">Homem-Aranha: Através do Aranhaverso</h2>
+            <div class="sobre__textos__texto text--big">
+                <p>a continuação do aclamado filme de animação “Homem-Aranha: No Aranhaverso” de 2018. Neste novo filme, Miles Morales retorna para uma nova aventura épica através do multiverso. Ele se une a Gwen Stacy e a um novo time de Homens-Aranha de diferentes dimensões para enfrentar um novo vilão e salvar o multiverso</p>
+            </div>
+        </div>
+    </section>
+    <section class="trailer">
+        <h2 class="trailer__titulo title">Assista o trailer dublado</h2>
+        <iframe class="trailer__video" src="https://www.youtube.com/embed/ME0QiRVsmVI?si=co0HV7DMPtWaf2nw" title="trailer dublado do filme homem aranha" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="assistir" class="assistir">
+        <div class="assistir__max">
+            <img class="assistir__max__logo" src="./dist/images/max-logo.png" alt="logo da max">
+            <h3 class="assistir__max__titulo title--small">Assista através do MAX</h3>
+            <p class="assistir__max__texto text--big">O filme “Homem-Aranha: Através do Aranhaverso” já está disponível no catálogo da HBO Max. A animação, que segue as aventuras de Miles Morales e outros heróis-aranha através do multiverso, pode ser assistida a qualquer momento pelos assinantes da plataforma12. Não perca a chance de conferir essa emocionante continuação da saga do Homem-Aranha!</p>
+            <a href="https://www.max.com/br/pt/movies/homem-aranha-atraves-do-aranhaverso/08f3260f-1512-4c90-a3df-fc2e407ba708?utm_source=universal_search" target="_blank">
+                <button class="assistir__max__link text--big">Clique aqui para assistir</button>
+            </a>
         </div>
     </section>
 </body>
